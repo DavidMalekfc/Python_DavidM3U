@@ -4,5 +4,3 @@ print("Hello")
 print("world")
 print("from")
 print("Canada!")
-language = "python3"
-run = "python formatif1/hello_David.py"
