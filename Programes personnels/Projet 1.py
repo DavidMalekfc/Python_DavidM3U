@@ -1,0 +1,20 @@
+print("")
+print("Ceci est un programe qui fournit le produit de deux nombres.")
+print("NOTE: La réponse fournie sera en nombre décimal.")
+print("")
+print("Entrer le premier nombre:")
+Premier_nombre= input()
+Premier_nombre= float(Premier_nombre)
+print("Entrer le deuxième nombre:")
+Deuxième_nombre= input()
+Deuxième_nombre= float(Deuxième_nombre)
+print("Écrire la réponse arrondi de ce que vous pensez:")
+VOTRE_RÉPONSE= float(input())
+print(VOTRE_RÉPONSE)
+VRAI_RÉPONSE= Premier_nombre * Deuxième_nombre
+if VOTRE_RÉPONSE == VRAI_RÉPONSE:
+    print("Bravo, vous avez la bonne réponse qui est:", VRAI_RÉPONSE)
+if VOTRE_RÉPONSE != VRAI_RÉPONSE:
+    print("Vous avez tort!")
+    print("La bonne réponse:")
+    print(VRAI_RÉPONSE)
