@@ -4,6 +4,7 @@
 print("")
 print("Insérer votre nom d'utilisateur:")
 name= input()
+print("")
 print("Salut", name,", je me nomme MathMaj et je suis un magicien!")
 print("Aimez-vous les mathématiques? (répondre par oui ou non)")
 réponse_1= input().lower()
@@ -14,7 +15,7 @@ if réponse_1 == "oui":
   print("Je suis divisible par 3;")
   print("La somme de chacun de mes chiffres est 9;")
   print("Je suis plus grand que 100, mais moins grand que 130.")
-  print("Aussi, mes chiffres sont chacunes trouvés une fois seulement dans le nombre. Qui suis-je?")
+  print("Aussi, mes chiffres sont chacunes trouvés une fois seulement dans le nombre. Quel est ce nombre?")
   print("Entrer votre réponse ci-dessous:")
   choix= input()
   if choix== "126":
@@ -29,13 +30,14 @@ elif réponse_1 == "non":
   print("Je suis divisible par 3;")
   print("La somme de chacun de mes chiffres est 9;")
   print("Je suis plus grand que 100, mais moins grand que 130.")
-  print("Aussi, mes chiffres sont chacunes trouvés une fois seulement dans le nombre. Qui suis-je?")
+  print("Aussi, mes chiffres sont chacunes trouvés une fois seulement dans le nombre. Quel est ce nombre?")
   print("Entrer votre réponse ci-dessous:")
   choix= input()
   if choix== "126":
     print("Bravo! Vous avez la bonne réponse!")
+    print("")
     print("Merci pour avoir participé! Revenez à chaque jour pour de nouvelles devinettes!")
   else:
     print("Votre réponse est fausse. Si vous voulez essayer encore, cliquez sur le bouton: Run ")
 else:
-  print("Je n'ai pas compris votre réponse. Répondez simplement par oui ou non:")
+  print("Je n'ai pas compris votre réponse. Répondez simplement par oui ou non après avoir cliqué sur Run encore une fois.")
