@@ -87,4 +87,4 @@ if estVrai:
   elif answer== "non":
     print("AH! C'est dommage! Je m'amusait bien avec toi! Reviens demain pour de nouvelles devinettes, possiblement dans un autre domaine!")
   else:
-    print("Je n'ai pas compris donc je vais assumer que c'est un oui. Merci pour avoir participé!")
+    print("Je n'ai pas compris donc je vais présumer que c'est un oui. Merci pour avoir participé!")
