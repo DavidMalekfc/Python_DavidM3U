@@ -13,10 +13,10 @@ print("Aimes-tu les mathématiques? (répondre par oui ou non)")
 
 ## 1.1 Réponse oui ou non (si « oui », il continue. Si « non », ne peut pas continuer)
 
-réponse_1= input().lower() # oui/non rest minuscule
+réponse_1= input().lower() # oui/non reste minuscule
 if réponse_1 == "oui":
   print("Excellent! Je vais essayer de vous tromper avec un problème à résoudre!")
-  estVrai= True #oui est vrai donc l'utilisateur continue avec le programme dans cette condition
+  estVrai= True #oui est vrai donc l'utilisateur continue avec le programme selon cette condition
 elif réponse_1== "non":
   print("C'est dommage, on aurait pu s'amuser ensemble avec les maths!")
   estVrai= False #Le programme va arrêter l'utilisateur de continuer car c'est un programmme pour ceux passionés en maths.
