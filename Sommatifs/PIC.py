@@ -53,7 +53,7 @@ if estVrai:
 if estVrai:
   print("")
   print("C'est le temps pour la prochaine devinette!")
-  print("Je suis un nombre pair à deux chiffres. Je suis divisible par 2, 3, et 6, et la racine carré de mon nombre est aussi sois 2,3, OU 6. Quand on inverse la position de mes chiffres, je devient un nombre impair qui est plus grand que mon nombre initial par 27 et je deviens impair.")
+  print("Je suis un nombre pair à deux chiffres. Je suis divisible par 2, 3, et 6, et la racine carré de mon nombre est aussi soit 2,3, OU 6. Quand on inverse la position de mes chiffres, je devient un nombre impair qui est plus grand que mon nombre initial par 27 et je deviens impair.")
   print("Quel est mon nombre final?")
 
 # Code de la réponse de devinette 2
@@ -68,13 +68,14 @@ if estVrai:
       print("Bravo, vous avez eu la bonne réponse cette fois.")
     else:
       print("Mauvaise réponse, revenez une autre fois.")
+      estVrai= False
 
 if estVrai:
   print("Avez vous aimé les deux devinettes?")
   answer= input().lower()
   if answer== "oui":
-    print("Cela est effectivement la réponse que l'on cherche. Merci beaucoup pour avoir pour votre participation!")
+    print("Cela est effectivement la réponse que l'on cherche. Merci beaucoup pour avoir pour avoir participé!")
   elif answer== "non":
-    print("AH! C'est dommage! Je m'amusait bien avec toi! Reviens demain pour de nouvelles devinettes possiblement dans un autre domaine!")
+    print("AH! C'est dommage! Je m'amusait bien avec toi! Reviens demain pour de nouvelles devinettes, possiblement dans un autre domaine!")
   else:
-    print("Je n'ai pas compris donc je vais assumer que c'est un oui. Merci pour votre participation!")
+    print("Je n'ai pas compris donc je vais assumer que c'est un oui. Merci pour avoir participé!")
