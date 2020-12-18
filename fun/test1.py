@@ -9,7 +9,6 @@ print("Pour répéter le processus, tapez 'r' pour recommencer immédiatement.")
 enter= input()
 print("Lister les repas de votre choix ci-dessous pour que j'en choisi un parmi la liste:")
 menu=[]
-choix=[]
 repeat= True
 while repeat:
   meal= input()  
