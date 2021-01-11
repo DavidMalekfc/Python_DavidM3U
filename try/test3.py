@@ -1,6 +1,6 @@
 import pgzrun
 
 def draw():
-    screen.fill("cyan")
+  screen.fill("cyan")
 
 pgzrun.go()
