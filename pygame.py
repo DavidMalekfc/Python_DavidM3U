@@ -1,2 +1,0 @@
-import pgzrun
-pgzrun.go()

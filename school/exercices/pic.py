@@ -1,7 +1,7 @@
 import pgzrun
 
-WIDTH= 800
-HEIGHT= 400
+WIDTH= 2000
+HEIGHT= 800
 
 ball= Actor("ball.png")
 ball.pos= (WIDTH, HEIGHT/2)
