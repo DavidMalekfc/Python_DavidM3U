@@ -1,6 +1,6 @@
 #Tâche: Programme base pygame en python
 #Par David Malek, maldav31@ecolecatholique.ca
-#2021/01/15
+#2021/01/18
 import pgzrun
 
 WIDTH= 400
