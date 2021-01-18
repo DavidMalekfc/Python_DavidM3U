@@ -1,4 +1,4 @@
-#Tâche: Programme interactif à la console en python
+#Tâche: Programme base pygame en python
 #Par David Malek, maldav31@ecolecatholique.ca
 #2021/01/15
 import pgzrun
@@ -6,6 +6,7 @@ import pgzrun
 WIDTH= 400
 HEIGHT= 300
 keep_play= True
+
 
 #Les instructions pour marquer un but
 instructions=("Marquer un but en utilisant les clés \n W,A,S,D pour déplacer le ballon.")
@@ -26,10 +27,19 @@ def draw():
   net.draw()
   screen.draw.text(instructions, (0,0), color="black", fontsize=23)
 
-#Rotation du ballon et marquer un but
+  if keep_play:
+    screen.fill("white")
+    ball.draw()
+    net.draw()
+    screen.draw.text(instructions, (0,0), color="black", fontsize=23)
+  else:
+    screen.draw.text("Press Run to reset", center = (WIDTH / 2,HEIGHT / 2), fontsize = 30)
+
+#Rotation du ballon
 def update():
   ball.angle -= spin
   if (ball.colliderect(net)):
+    ball.angle = 0
     keep_play= False
 
 #Mouvement du ballon
@@ -43,12 +53,4 @@ def on_key_down(key):
   elif key== keys.A:
     ball.x -= 10
 
-""" #option à essayer (je viens de l'écrire)
-while keep_play:
-  draw()
-  update()
-  on_key_down(key)
-  if (ball.colliderect(net)):
-    keep_play= False
-"""
 pgzrun.go()
