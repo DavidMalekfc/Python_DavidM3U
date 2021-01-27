@@ -1,26 +1,23 @@
 # Tâche: Programme pour projet pgzero en python
 # Par David Malek, maldav31@ecolecatholique.ca
 # 2021/01/26
-
 ## CODE POUR JEU: SPACE DASH
 import pgzrun 
 import random
 
-WIDTH=500  # Base de la fenêtre
-HEIGHT=300 # Hauteur de la fenêtre 
+WIDTH=500  # Longueur de la base de la fenêtre
+HEIGHT=300 # Longueur de la hauteur de la fenêtre 
 dead= False 
 
 # Sprite space
 space= Actor("space.png")
 
-
 # Sprite jetpack et position initiale
 jetpack= Actor("jetpack.png")
 jetpack.pos= (50, 250) 
 
-
 # Sprite rocket et position initiale
-rocket= Actor("rocket2.png")
+rocket= Actor("rocket.png")
 rocket.x= WIDTH
 rocket.y= HEIGHT/2 
 
@@ -50,7 +47,6 @@ def update():
     if keyboard.s:
       jetpack.y += 5 
 
-
     # Limiter région de déplacement du bonhomme à la hauteur de la fenêtre
     # Condition: En enlevant de l'extrémité une certaine longueure (la hauteur de jetpack/2) pour que bohomme ne soit pas demi caché. 
     # SINON, on peut mettre une limite: jetpack.y <=0 et >=HEIGHT 
@@ -60,11 +56,9 @@ def update():
     elif jetpack.y >= (HEIGHT - jetpack.height/2):
       jetpack.y= (HEIGHT - jetpack.height/2)
 
-
     # Code qui gère les déplacements horizotales des fusées quand position "x" de la fusée > 0
     if rocket.x>0:
       rocket.x -= speed # Déplacement horizontale de la fusée (droite vers la gauche)
-
 
     # Quand position "x" de fusée < 0
     else:
@@ -76,7 +70,6 @@ def update():
       rocket.x = WIDTH # Repositionnement de la fusée vers la droite.
       rocket.y = random.randint((0 + jetpack.height/2), (HEIGHT-jetpack.height/2)) # Repositionnement au hasard de la fusée (verticalement)... 
       # La région est limitée à la fenêtre, mais en limitant davantage d'une longueur (la hauteur de jetpack/2) à partir de 0 et HEIGHT.
-
 
   # Si bonhomme entre en contact avec ces 3 points de la fusée, bonhomme meurt
   if jetpack.collidepoint(rocket.midleft) or jetpack.collidepoint(rocket.midtop) or jetpack.collidepoint(rocket.midbottom):
